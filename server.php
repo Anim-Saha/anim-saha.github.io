@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST["first_name"];
-    $lastName = $_POST["last_name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
+    $firstName = $_POST["First_name"];
+    $lastName = $_POST["Last_name"];
+    $email = $_POST["Email"];
+    $subject = $_POST["Subject"];
+    $message = $_POST["Message"];
     
     // Validate email format and required fields (add more validation as needed)
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($firstName) || empty($subject) || empty($message)) {
