@@ -667,12 +667,12 @@
                 </div>
                 <form action="server.php" method="post">
                     <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" name ="Name" placeholder="First Name" required>
+                        <input type="text" name ="Name" placeholder="Last Name" required>
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
+                    <input type="email" name ="Email" placeholder="Email" required>
+                    <input name ="Subject" placeholder="Subject" required>
+                    <textarea name="Message" id="Message" cols="30" rows="10" required>
                     </textarea>
                     <div class="formBtn">
                         <button type="submit" class="btn">Send Message</button>
